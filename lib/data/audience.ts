@@ -1,0 +1,82 @@
+export const audienceData = {
+  segments: [
+    {
+      id: "thinkers",
+      name: "Thinkers",
+      percentage: 55,
+      tagline: "The Mindful Curator",
+      description: "Intellectually curious individuals who approach home as an expression of inner life. They research deeply, buy intentionally, and value meaning over status.",
+      demographics: {
+        age: "32–48",
+        gender: "65% Female, 35% Male",
+        income: "THB 80,000–200,000/month",
+        location: "Urban Bangkok, Chiang Mai",
+        education: "University educated, often postgrad",
+        occupation: "Creative professionals, academics, designers, writers",
+      },
+      psychographics: {
+        values: ["Authenticity", "Mindfulness", "Craft", "Solitude", "Quality over quantity"],
+        lifestyle: ["Slow living advocates", "Home as sanctuary", "Ritualistic routines"],
+        mediaHabits: ["Long-form reading", "Curated Instagram", "Podcasts on culture/design"],
+        shoppingBehavior: "Research-heavy, brand-loyal once trust is established",
+      },
+      painPoints: ["Overwhelmed by mass-market noise", "Distrust of greenwashing", "Desire for products with narrative"],
+      motivators: ["Discover before others do", "Products with story and philosophy", "Sustainable and intentional consumption"],
+    },
+    {
+      id: "achievers",
+      name: "Achievers",
+      percentage: 45,
+      tagline: "The Quiet Sophisticate",
+      description: "High-performing professionals who use their home environment as a recovery space. They want quality without the need to explain it — self-reward that is personal, not performative.",
+      demographics: {
+        age: "35–52",
+        gender: "55% Female, 45% Male",
+        income: "THB 150,000–500,000/month",
+        location: "Bangkok Sukhumvit, Thonglor, Sathorn",
+        education: "MBA or professional degree",
+        occupation: "Executives, entrepreneurs, finance, legal",
+      },
+      psychographics: {
+        values: ["Excellence", "Discretion", "Efficiency", "Self-reward", "Private indulgence"],
+        lifestyle: ["High-output professional life", "Travel frequently", "Home as recovery zone"],
+        mediaHabits: ["Luxury publications", "LinkedIn", "Curated newsletters"],
+        shoppingBehavior: "Decisive, brand-trust driven, willing to pay for perceived value",
+      },
+      painPoints: ["No time to research", "Distrust of loud luxury brands", "Want exclusivity without ostentation"],
+      motivators: ["Trusted quality signals", "Streamlined rituals", "Products that quietly signal taste"],
+    },
+  ],
+  journeyStages: [
+    {
+      stage: "Awareness",
+      touchpoints: ["Instagram editorial content", "Word of mouth", "Lifestyle press features"],
+      emotion: "Curious intrigue",
+      velariAction: "Create aspirational content that evokes the VELARI world",
+    },
+    {
+      stage: "Consideration",
+      touchpoints: ["Website brand story", "Product descriptions", "Scent notes and philosophy"],
+      emotion: "Resonant recognition",
+      velariAction: "Deepen the narrative — help them feel seen and understood",
+    },
+    {
+      stage: "Purchase",
+      touchpoints: ["Elegant packaging reveal", "Unboxing experience", "First use ritual guide"],
+      emotion: "Anticipation and satisfaction",
+      velariAction: "Make the purchase feel like a ritual, not a transaction",
+    },
+    {
+      stage: "Retention",
+      touchpoints: ["Replenishment nudges", "Seasonal collections", "Member communications"],
+      emotion: "Quiet loyalty",
+      velariAction: "Maintain intimacy — remember, reward, renew",
+    },
+    {
+      stage: "Advocacy",
+      touchpoints: ["Private community", "Gifting behavior", "Social proof"],
+      emotion: "Ownership and pride",
+      velariAction: "Let advocates feel like insiders who discovered something rare",
+    },
+  ],
+};
