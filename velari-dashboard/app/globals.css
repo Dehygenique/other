@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: 40 33% 97%;
+  --foreground: 25 30% 24%;
+  --card: 40 33% 97%;
+  --card-foreground: 25 30% 24%;
+  --popover: 40 33% 97%;
+  --popover-foreground: 25 30% 24%;
+  --primary: 34 28% 69%;
+  --primary-foreground: 25 30% 15%;
+  --secondary: 34 25% 88%;
+  --secondary-foreground: 25 30% 24%;
+  --muted: 34 25% 88%;
+  --muted-foreground: 25 20% 45%;
+  --accent: 30 23% 45%;
+  --accent-foreground: 40 33% 97%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --border: 34 25% 82%;
+  --input: 34 25% 82%;
+  --ring: 34 28% 69%;
+  --radius: 0.5rem;
+  --font-cormorant: 'Cormorant Garamond', Georgia, serif;
+  --font-inter: 'Inter', system-ui, sans-serif;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background-color: #FAF7F2;
+  color: #4A3F35;
+  font-family: var(--font-inter);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-cormorant);
+}

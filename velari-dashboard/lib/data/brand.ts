@@ -1,0 +1,47 @@
+export const brandData = {
+  name: "VELARI",
+  tagline: "Private Scent That Stays Close",
+  vision: "To become the world's most trusted name in intimate, sensory home rituals — a brand that lives not on shelves, but in memory.",
+  mission: "We craft fragrance and fabric care experiences that anchor people to moments of stillness, comfort, and self-possession — turning the everyday into the quietly extraordinary.",
+  purpose: "To help people create spaces where they can fully be themselves — unhurried, unperformed, at peace.",
+  essence: "Private Scent That Stays Close",
+  positioning: "Luxury emotional lifestyle brand for those who seek comfort in ritual and meaning in the mundane",
+  archetypes: [
+    {
+      name: "Caregiver",
+      role: "Primary",
+      description: "VELARI nurtures — it tends to spaces, moods, and the quiet needs of daily life. Like a trusted hand that prepares the room before you arrive.",
+      traits: ["Nurturing", "Protective", "Attentive", "Warm", "Consistent"],
+      color: "#C8B89A",
+    },
+    {
+      name: "Creator",
+      role: "Secondary",
+      description: "VELARI crafts. Every product is composed like a poem — intentional, layered, beautiful in its restraint.",
+      traits: ["Intentional", "Artisanal", "Imaginative", "Refined", "Expressive"],
+      color: "#8B7355",
+    },
+    {
+      name: "Sage",
+      role: "Supporting",
+      description: "VELARI knows. It understands the chemistry of comfort — the quiet intelligence behind every formulation and ritual.",
+      traits: ["Knowing", "Considered", "Understated", "Precise", "Trusted"],
+      color: "#2C2416",
+    },
+  ],
+  territories: [
+    { name: "Private Scent", description: "Fragrance that belongs to personal space, not public performance" },
+    { name: "Comfort", description: "The emotional and physical ease of being at home" },
+    { name: "Memory", description: "Scent as a keeper of moments and emotional archives" },
+    { name: "Ritual", description: "The quiet ceremonies that structure daily life with intention" },
+    { name: "Emotional Resonance", description: "Products that connect to feeling, not just function" },
+    { name: "Quiet Luxury", description: "Excellence that doesn't announce itself" },
+  ],
+  communicationPrinciples: [
+    { name: "Whisper, Don't Shout", description: "Soft authority. Confidence without volume." },
+    { name: "Evoke, Don't Explain", description: "Trust the imagination. Paint the scene." },
+    { name: "Intimate Scale", description: "Write to one person, not a crowd." },
+    { name: "Time as Texture", description: "Reference slowness, pause, the unhurried moment." },
+    { name: "Sensory First", description: "Lead with what is felt before what is known." },
+  ],
+};
