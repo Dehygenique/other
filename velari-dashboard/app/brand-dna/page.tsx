@@ -1,7 +1,6 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { DashboardLayout } from "@/components/layout/DashboardLayout";
 
 const fade = (delay = 0) => ({
   initial: { opacity: 0, y: 20 },
@@ -70,7 +69,6 @@ const territories = [
 
 export default function BrandDNAPage() {
   return (
-    <DashboardLayout>
       <div className="space-y-8">
         {/* Hero */}
         <motion.div {...fade(0)} className="bg-[#2C2416] rounded-2xl p-10 text-center">
@@ -233,6 +231,5 @@ export default function BrandDNAPage() {
           </div>
         </motion.div>
       </div>
-    </DashboardLayout>
   );
 }
