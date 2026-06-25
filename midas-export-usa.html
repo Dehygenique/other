@@ -1,0 +1,1183 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MIDAS EXPORT USA – ข้อเสนอทางยุทธศาสตร์</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;500;600;700;800&family=Montserrat:wght@400;600;700;800;900&display=swap');
+
+  :root {
+    --gold: #C9973A;
+    --gold-light: #E8C060;
+    --gold-dark: #8B6914;
+    --black: #0D0D0D;
+    --white: #FFFFFF;
+    --off-white: #F9F7F4;
+    --gray-100: #F4F2EE;
+    --gray-200: #E8E4DE;
+    --gray-500: #9A9390;
+    --gray-700: #555250;
+    --text-main: #1A1814;
+    --text-sub: #5A5754;
+    --shadow: 0 4px 24px rgba(0,0,0,0.08);
+    --shadow-lg: 0 12px 48px rgba(0,0,0,0.14);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Sarabun', sans-serif;
+    background: var(--white);
+    color: var(--text-main);
+    font-size: 16px;
+    line-height: 1.7;
+  }
+
+  /* ─── NAV ─────────────────────────────── */
+  nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 100;
+    background: rgba(255,255,255,0.96);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    height: 64px;
+  }
+  .nav-logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: var(--black);
+    text-decoration: none;
+  }
+  .nav-logo span { color: var(--gold); }
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 32px;
+  }
+  nav ul a {
+    text-decoration: none;
+    color: var(--text-sub);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: color .2s;
+  }
+  nav ul a:hover { color: var(--gold); }
+
+  /* ─── HERO ────────────────────────────── */
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0D0D0D 0%, #1C1710 50%, #0D0D0D 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 24px 80px;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse at 50% 40%, rgba(201,151,58,0.18) 0%, transparent 65%);
+  }
+  .hero-badge {
+    display: inline-block;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    font-size: 11px;
+    letter-spacing: 3px;
+    padding: 6px 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+  }
+  .hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(48px, 8vw, 96px);
+    font-weight: 900;
+    color: var(--white);
+    letter-spacing: -1px;
+    line-height: 1;
+    margin-bottom: 12px;
+  }
+  .hero h1 .gold { color: var(--gold); }
+  .hero-sub {
+    font-size: clamp(14px, 2vw, 18px);
+    color: rgba(255,255,255,0.55);
+    margin-bottom: 16px;
+    font-weight: 300;
+    letter-spacing: 1px;
+  }
+  .hero-desc {
+    max-width: 620px;
+    margin: 0 auto 48px;
+    color: rgba(255,255,255,0.72);
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .hero-cta {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--black);
+    padding: 16px 44px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 1.5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: background .2s, transform .2s;
+  }
+  .hero-cta:hover { background: var(--gold-light); transform: translateY(-2px); }
+  .hero-line {
+    width: 60px;
+    height: 2px;
+    background: var(--gold);
+    margin: 24px auto;
+  }
+
+  /* ─── SECTION SHARED ──────────────────── */
+  section { padding: 100px 24px; }
+  .container { max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    letter-spacing: 3px;
+    color: var(--gold);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .section-title {
+    font-size: clamp(28px, 4vw, 44px);
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: var(--text-main);
+  }
+  .section-title .gold { color: var(--gold); }
+  .section-desc {
+    color: var(--text-sub);
+    max-width: 640px;
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 56px;
+  }
+  .divider {
+    width: 48px;
+    height: 3px;
+    background: var(--gold);
+    margin-bottom: 48px;
+  }
+
+  /* ─── OVERVIEW / PILLARS ──────────────── */
+  .overview { background: var(--off-white); }
+  .pillars {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 28px;
+    margin-top: 56px;
+  }
+  .pillar {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    padding: 40px 36px;
+    position: relative;
+    transition: box-shadow .3s, transform .3s;
+  }
+  .pillar:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+  .pillar-num {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: var(--gray-200);
+    line-height: 1;
+    margin-bottom: 16px;
+  }
+  .pillar h3 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-main);
+  }
+  .pillar p { color: var(--text-sub); font-size: 15px; line-height: 1.7; }
+  .pillar-gold { border-top: 3px solid var(--gold); }
+
+  /* ─── PRODUCTS ────────────────────────── */
+  .products { background: var(--black); }
+  .products .section-title { color: var(--white); }
+  .products .section-desc { color: rgba(255,255,255,0.55); }
+  .products .section-label { color: var(--gold); }
+  .products .divider { background: var(--gold); }
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2px;
+    margin-top: 48px;
+  }
+  .product-card {
+    background: #161410;
+    padding: 44px 36px;
+    border: 1px solid #2A2620;
+    transition: border-color .3s;
+  }
+  .product-card:hover { border-color: var(--gold); }
+  .product-card .badge {
+    display: inline-block;
+    background: var(--gold);
+    color: var(--black);
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    padding: 4px 12px;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .product-card h3 {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  .product-card .ir {
+    color: var(--gold);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    margin-bottom: 16px;
+  }
+  .product-card p { color: rgba(255,255,255,0.55); font-size: 14px; line-height: 1.75; }
+  .product-card .series { color: rgba(255,255,255,0.3); font-size: 12px; margin-top: 12px; font-family: 'Montserrat', sans-serif; }
+
+  /* ─── SIZE GUIDE ──────────────────────── */
+  .sizes { background: var(--white); }
+  .size-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+  .size-card {
+    border: 1px solid var(--gray-200);
+    padding: 28px 24px;
+    text-align: center;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .size-card:hover { border-color: var(--gold); box-shadow: var(--shadow); }
+  .size-card .size-tag {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .size-card h4 { font-size: 14px; font-weight: 700; margin-bottom: 10px; color: var(--text-main); }
+  .size-card p { font-size: 12.5px; color: var(--text-sub); line-height: 1.6; }
+  .size-note {
+    margin-top: 32px;
+    background: #FFF8EE;
+    border-left: 4px solid var(--gold);
+    padding: 16px 20px;
+    font-size: 14px;
+    color: var(--text-sub);
+    line-height: 1.7;
+  }
+  .size-note strong { color: var(--gold-dark); }
+
+  /* ─── TABLES ──────────────────────────── */
+  .pricing { background: var(--gray-100); }
+  .pricing-dark { background: #0A0907; }
+  .pricing-dark .section-title { color: var(--white); }
+  .pricing-dark .section-desc { color: rgba(255,255,255,0.5); }
+  .pricing-dark .section-label { color: var(--gold); }
+  .pricing-dark .divider { background: var(--gold); }
+
+  .table-wrap { overflow-x: auto; margin-top: 40px; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    min-width: 640px;
+  }
+  thead tr {
+    background: var(--black);
+  }
+  .pricing-dark thead tr { background: #1A1710; }
+  thead th {
+    color: var(--white);
+    padding: 16px 20px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 13px;
+    white-space: nowrap;
+  }
+  thead th:first-child { text-align: left; background: var(--gold); color: var(--black); font-weight: 800; }
+  tbody tr { border-bottom: 1px solid var(--gray-200); transition: background .15s; }
+  .pricing-dark tbody tr { border-color: #2A2620; }
+  tbody tr:hover { background: rgba(201,151,58,0.06); }
+  tbody td {
+    padding: 14px 20px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--text-main);
+  }
+  .pricing-dark tbody td { color: rgba(255,255,255,0.8); }
+  tbody td:first-child { text-align: left; font-weight: 700; white-space: nowrap; }
+  .price-wholesale {
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    color: var(--gold-dark);
+  }
+  .pricing-dark .price-wholesale { color: var(--gold); }
+  .price-retail {
+    display: block;
+    font-size: 12px;
+    color: var(--gray-500);
+    margin-top: 2px;
+  }
+  .pricing-dark .price-retail { color: rgba(255,255,255,0.4); }
+  .table-note {
+    margin-top: 16px;
+    font-size: 12.5px;
+    color: var(--text-sub);
+    padding: 12px 16px;
+    background: var(--white);
+    border-left: 3px solid var(--gold);
+  }
+  .pricing-dark .table-note { background: #161410; color: rgba(255,255,255,0.5); }
+
+  /* ─── PPF HERO ────────────────────────── */
+  .ppf-intro {
+    background: linear-gradient(160deg, #F9F5EE 0%, #FFF 100%);
+    border-top: 1px solid var(--gray-200);
+    border-bottom: 1px solid var(--gray-200);
+  }
+  .ppf-split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+    align-items: center;
+  }
+  @media(max-width:768px) { .ppf-split { grid-template-columns: 1fr; gap: 40px; } }
+  .ppf-feature {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 28px;
+    align-items: flex-start;
+  }
+  .ppf-icon {
+    width: 44px;
+    height: 44px;
+    background: var(--black);
+    color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+  .ppf-feature h4 { font-size: 16px; font-weight: 700; margin-bottom: 6px; }
+  .ppf-feature p { font-size: 14px; color: var(--text-sub); line-height: 1.7; }
+  .ppf-highlight {
+    background: var(--black);
+    color: var(--white);
+    padding: 40px;
+    position: relative;
+    overflow: hidden;
+  }
+  .ppf-highlight::before {
+    content: 'PPF';
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 100px;
+    font-weight: 900;
+    color: rgba(201,151,58,0.08);
+    line-height: 1;
+  }
+  .ppf-highlight h3 {
+    color: var(--gold);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 12px;
+  }
+  .ppf-highlight p { color: rgba(255,255,255,0.7); font-size: 15px; line-height: 1.8; }
+  .ppf-tag {
+    display: inline-block;
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    padding: 4px 14px;
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 16px;
+    letter-spacing: 1px;
+  }
+
+  /* ─── PARTS PRICING ───────────────────── */
+  .parts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin-top: 48px;
+  }
+  .part-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    padding: 28px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: border-color .2s, box-shadow .2s;
+  }
+  .part-card:hover { border-color: var(--gold); box-shadow: var(--shadow); }
+  .part-name { font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+  .part-wholesale {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--gold-dark);
+    display: block;
+  }
+  .part-retail { font-size: 12px; color: var(--gray-500); }
+  .part-icon { font-size: 28px; opacity: 0.5; }
+
+  /* ─── PACKAGES ────────────────────────── */
+  .packages { background: var(--off-white); }
+  .package-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+  .package-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    padding: 36px 32px;
+    position: relative;
+    text-align: center;
+    transition: box-shadow .3s, transform .3s;
+  }
+  .package-card:hover { box-shadow: var(--shadow-lg); transform: translateY(-4px); }
+  .package-card.featured { border-color: var(--gold); background: #FDFAF4; }
+  .package-ribbon {
+    position: absolute;
+    top: 16px;
+    right: -4px;
+    background: var(--gold);
+    color: var(--black);
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 14px 4px 10px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  .package-card h3 { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+  .package-card .warranty {
+    font-size: 12px;
+    color: var(--gold-dark);
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+  }
+  .pkg-price-label { font-size: 12px; color: var(--gray-500); margin-bottom: 4px; }
+  .pkg-price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: var(--text-main);
+    line-height: 1;
+    margin-bottom: 4px;
+  }
+  .pkg-retail { font-size: 13px; color: var(--gray-500); margin-bottom: 24px; }
+  .pkg-sizes {
+    display: grid;
+    gap: 10px;
+    margin-top: 20px;
+    text-align: left;
+  }
+  .pkg-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 0;
+    border-bottom: 1px solid var(--gray-200);
+    font-size: 13.5px;
+  }
+  .pkg-row:last-child { border: none; }
+  .pkg-row .s-tag { font-weight: 700; }
+  .pkg-row .s-price { font-family: 'Montserrat', sans-serif; font-weight: 700; color: var(--gold-dark); }
+
+  /* ─── PROFIT ──────────────────────────── */
+  .profit { background: var(--black); overflow: hidden; position: relative; }
+  .profit::before {
+    content: '45%';
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 280px;
+    font-weight: 900;
+    color: rgba(201,151,58,0.05);
+    line-height: 1;
+    pointer-events: none;
+  }
+  .profit .section-title { color: var(--white); }
+  .profit .section-label { color: var(--gold); }
+  .profit .divider { background: var(--gold); }
+  .profit-big {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(64px, 12vw, 120px);
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 8px;
+  }
+  .profit-sub {
+    font-size: 16px;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 48px;
+    font-weight: 300;
+  }
+  .profit-points {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 28px;
+    margin-top: 48px;
+  }
+  .profit-point {
+    border-left: 2px solid var(--gold);
+    padding: 8px 0 8px 24px;
+  }
+  .profit-point h4 { color: var(--gold); font-size: 15px; font-weight: 700; margin-bottom: 8px; }
+  .profit-point p { color: rgba(255,255,255,0.6); font-size: 14px; line-height: 1.75; }
+  .profit-example {
+    margin-top: 48px;
+    background: #161410;
+    border: 1px solid #2A2620;
+    padding: 36px 40px;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .profit-example-num {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--gold);
+    white-space: nowrap;
+  }
+  .profit-example p { color: rgba(255,255,255,0.65); font-size: 15px; line-height: 1.8; max-width: 560px; }
+
+  /* ─── MAXIMUS ─────────────────────────── */
+  .maximus { background: var(--off-white); }
+  .maximus-card {
+    background: var(--white);
+    border: 1px solid var(--gray-200);
+    padding: 48px;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 48px;
+    align-items: center;
+  }
+  @media(max-width:640px) { .maximus-card { grid-template-columns: 1fr; } }
+  .maximus-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: var(--text-main);
+  }
+  .maximus-card p { color: var(--text-sub); font-size: 15px; line-height: 1.8; margin-bottom: 16px; }
+  .maximus-price-box { text-align: center; min-width: 180px; }
+  .maximus-price-box .label { font-size: 12px; color: var(--gray-500); margin-bottom: 4px; }
+  .maximus-price-box .price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 900;
+    color: var(--gold-dark);
+    line-height: 1;
+  }
+  .maximus-price-box .retail { font-size: 13px; color: var(--gray-500); margin-top: 6px; }
+  .cond-list {
+    list-style: none;
+    margin-top: 24px;
+    display: grid;
+    gap: 10px;
+  }
+  .cond-list li {
+    display: flex;
+    gap: 12px;
+    font-size: 14px;
+    color: var(--text-sub);
+    padding: 10px 0;
+    border-bottom: 1px solid var(--gray-100);
+  }
+  .cond-list li::before {
+    content: '▸';
+    color: var(--gold);
+    font-size: 12px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  /* ─── CTA ─────────────────────────────── */
+  .cta-section {
+    background: linear-gradient(135deg, #0D0D0D, #1C1710);
+    padding: 120px 24px;
+    text-align: center;
+  }
+  .cta-section h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(32px, 5vw, 56px);
+    font-weight: 900;
+    color: var(--white);
+    margin-bottom: 16px;
+  }
+  .cta-section h2 span { color: var(--gold); }
+  .cta-section p { color: rgba(255,255,255,0.55); font-size: 17px; max-width: 560px; margin: 0 auto 48px; line-height: 1.8; }
+  .contact-box {
+    display: inline-block;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.12);
+    padding: 40px 60px;
+    text-align: left;
+    max-width: 520px;
+    width: 100%;
+  }
+  .contact-box h4 {
+    color: var(--gold);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  .contact-row { display: flex; gap: 12px; margin-bottom: 14px; align-items: flex-start; }
+  .contact-row .icon { color: var(--gold); font-size: 16px; margin-top: 2px; flex-shrink: 0; }
+  .contact-row p { color: rgba(255,255,255,0.75); font-size: 15px; line-height: 1.6; }
+  .cta-note {
+    margin-top: 32px;
+    font-size: 12px;
+    color: rgba(255,255,255,0.35);
+    text-align: center;
+  }
+
+  /* ─── FOOTER ──────────────────────────── */
+  footer {
+    background: #070604;
+    padding: 28px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-top: 1px solid #1A1814;
+  }
+  footer .logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    color: var(--white);
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  footer .logo span { color: var(--gold); }
+  footer p { color: rgba(255,255,255,0.25); font-size: 12px; }
+
+  /* ─── UTILS ───────────────────────────── */
+  .text-center { text-align: center; }
+  .mt-8 { margin-top: 8px; }
+  .mt-16 { margin-top: 16px; }
+  .mt-32 { margin-top: 32px; }
+
+  @media(max-width:768px) {
+    nav ul { display: none; }
+    nav { padding: 0 20px; }
+    section { padding: 72px 20px; }
+    .profit::before { display: none; }
+    .contact-box { padding: 32px 28px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a class="nav-logo" href="#hero">MIDAS <span>EXPORT</span></a>
+  <ul>
+    <li><a href="#overview">ภาพรวม</a></li>
+    <li><a href="#products">ผลิตภัณฑ์</a></li>
+    <li><a href="#window-film">ฟิล์มกรองแสง</a></li>
+    <li><a href="#ppf">ฟิล์ม PPF</a></li>
+    <li><a href="#profit">ส่วนต่างกำไร</a></li>
+    <li><a href="#contact">ติดต่อ</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div>
+    <div class="hero-badge">Strategic Business Proposal</div>
+    <h1>MIDAS<br><span class="gold">EXPORT USA</span></h1>
+    <div class="hero-line"></div>
+    <p class="hero-sub">นำเสนอโดย บริษัท เอส อาร์ 499 จำกัด · ผู้จัดจำหน่ายอย่างเป็นทางการ</p>
+    <p class="hero-desc">แผนเสนอราคากลุ่มผลิตภัณฑ์ฟิล์มกรองแสงพรีเมียม และฟิล์มใสกันรอยรถยนต์ (PPF) เพื่อยกระดับผลกำไรสูงสุดสำหรับพันธมิตรโชว์รูมรถยนต์</p>
+    <a href="#overview" class="hero-cta">ดูข้อเสนอ</a>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section class="overview" id="overview">
+  <div class="container">
+    <div class="section-label">ภาพรวม</div>
+    <h2 class="section-title">นวัตกรรมและการร่วม<span class="gold">เป็นพันธมิตร</span></h2>
+    <div class="divider"></div>
+    <p class="section-desc">Midas Window Film คือนวัตกรรมฟิล์มกรองแสงและฟิล์มใสกันรอยรถยนต์ที่ได้รับการยอมรับในระดับสากล พร้อมการรับประกันสูงสุดถึง 5 ปีเต็ม</p>
+    <div class="pillars">
+      <div class="pillar pillar-gold">
+        <div class="pillar-num">01</div>
+        <h3>มาตรฐานระดับสูงจาก USA</h3>
+        <p>นวัตกรรมฟิล์มกรองแสงและฟิล์มใสกันรอยรถยนต์คุณภาพสูง เทคโนโลยีลิขสิทธิ์เฉพาะจากสหรัฐอเมริกา ได้รับความไว้วางใจในโชว์รูมชั้นนำระดับสากล</p>
+      </div>
+      <div class="pillar pillar-gold">
+        <div class="pillar-num">02</div>
+        <h3>นวัตกรรมถนอมสีรถ</h3>
+        <p>วัสดุป้องกันขั้นสูงสุด ป้องกันคราบฝังลึก เศษหินดีด และซ่อมแซมรอยขีดข่วนรวดเร็ว (Self-Healing) เมื่อสัมผัสความร้อนจากแสงแดด</p>
+      </div>
+      <div class="pillar pillar-gold">
+        <div class="pillar-num">03</div>
+        <h3>ผลประโยชน์โชว์รูมสูงสุด</h3>
+        <p>ช่วยเพิ่มมูลค่าแคมเปญส่งเสริมการขายด้วยวัสดุระดับพรีเมียม พร้อมส่วนต่างราคาส่ง (Wholesale) สำหรับพันธมิตรโดยเฉพาะ</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="products" id="products">
+  <div class="container">
+    <div class="section-label">ผลิตภัณฑ์ฟิล์มกรองแสง</div>
+    <h2 class="section-title" style="color:#fff;">นวัตกรรมฟิล์มกรองแสง<br><span style="color:var(--gold)">Midas Window Film</span></h2>
+    <div class="divider"></div>
+    <div class="product-grid">
+      <div class="product-card">
+        <div class="badge">BLACK BEAR CERAMIC</div>
+        <h3>Black Bear Ceramic</h3>
+        <div class="ir">IR 85%</div>
+        <p>ฟิล์มเซรามิคโทนดำเข้มระดับพรีเมียม ป้องกันรังสีอินฟราเรดสูงถึง 85% ให้วิสัยทัศน์เคลียร์ชัดจากภายใน แต่คงความเป็นส่วนตัวอย่างดีเยี่ยมจากภายนอก</p>
+        <div class="series">BB30 / BB20 / BB05</div>
+      </div>
+      <div class="product-card" style="border-color:var(--gold);">
+        <div class="badge">WOLF ULTIMATE SERIES</div>
+        <h3>Wolf Ultimate Series</h3>
+        <div class="ir">IR 95%</div>
+        <p>รุ่นยอดนิยมสำหรับผู้ต้องการการปกป้องขั้นสุด ป้องกันรังสีอินฟราเรดได้ถึง 95% ลดอุณหภูมิในห้องโดยสารได้อย่างเห็นผลชัดเจน</p>
+        <div class="series">Wolf 70/30/20/05 · Black Porsche</div>
+      </div>
+      <div class="product-card">
+        <div class="badge">MIDAS PHOTOCHROMIC</div>
+        <h3>Midas Photochromic</h3>
+        <div class="ir">IR 98–99%</div>
+        <p>นวัตกรรมขั้นสูงที่สามารถปรับระดับความเข้มของเนื้อฟิล์มตามความเข้มของแสงแดดได้โดยอัตโนมัติ ป้องกันความร้อนสูงสุด 98–99%</p>
+        <div class="series">70 / 30 / 20 / 10</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SIZE GUIDE -->
+<section class="sizes" id="sizes">
+  <div class="container">
+    <div class="section-label">เกณฑ์ขนาดตัวถังรถ</div>
+    <h2 class="section-title">คู่มือจำแนก<span class="gold">ขนาดตัวถัง</span>รถยนต์</h2>
+    <div class="divider"></div>
+    <div class="size-grid">
+      <div class="size-card">
+        <div class="size-tag">S</div>
+        <h4>Small</h4>
+        <p>รถขนาดเล็ก/สปอร์ตคูเป้<br>Vios, Yaris, Swift, Brio, BMW Z4, Mazda MX-5, Porsche Cayman</p>
+      </div>
+      <div class="size-card">
+        <div class="size-tag">M</div>
+        <h4>Medium</h4>
+        <p>ซีดานยอดนิยมและ Crossover<br>Altis, Camry, Civic, HR-V, BR-V, BMW 3, Benz C/E-Class</p>
+      </div>
+      <div class="size-card" style="border-color:var(--gold);">
+        <div class="size-tag">L</div>
+        <h4>Large</h4>
+        <p>SUV และซีดานขนาดใหญ่<br>Fortuner, Accord, CR-V, MU-X, BMW 5/7, Taycan, Tesla Y</p>
+      </div>
+      <div class="size-card">
+        <div class="size-tag">XL</div>
+        <h4>Extra Large</h4>
+        <p>SUV พรีเมียม/รถตู้ VIP<br>Alphard, Vellfire, Commuter, H1, Vito, Cayenne</p>
+      </div>
+      <div class="size-card">
+        <div class="size-tag">XXL</div>
+        <h4>Extra Extra Large</h4>
+        <p>รถตู้วีไอพีและรถหรูขนาดใหญ่พิเศษ, S-Class, Taycan</p>
+      </div>
+    </div>
+    <div class="size-note">
+      <strong>⚠ หมายเหตุงาน PPF:</strong> ระบบราคางานฟิล์มกันรอยสีรถ (PPF) แบบเต็มคัน จะไม่มีขนาด S และ M — รถยนต์เก๋งขนาดเล็กและกลางทั้งหมดจะถูกคิดอัตราเริ่มต้นที่กลุ่ม <strong>Size L</strong>
+    </div>
+  </div>
+</section>
+
+<!-- WINDOW FILM PRICING -->
+<section class="pricing" id="window-film">
+  <div class="container">
+    <div class="section-label">ราคาฟิล์มกรองแสง</div>
+    <h2 class="section-title">ตารางราคา<span class="gold">ฟิล์มกรองแสง</span></h2>
+    <div class="divider"></div>
+    <p class="section-desc">บานหน้า + รอบคัน · ราคาไม่รวม VAT 7% · อ้างอิงตามใบเสนอราคา 25-04-69</p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ขนาดตัวถัง</th>
+            <th>Black Bear Ceramic<br><small style="font-weight:400;color:#aaa">IR 85%</small></th>
+            <th>Wolf Ultimate / Black Porsche<br><small style="font-weight:400;color:#aaa">IR 95%</small></th>
+            <th>Midas Photochromic<br><small style="font-weight:400;color:#aaa">IR 98–99% ปรับแสง</small></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Size S</td>
+            <td><span class="price-wholesale">฿9,000</span><span class="price-retail">ปลีก ฿15,000</span></td>
+            <td><span class="price-wholesale">฿18,000</span><span class="price-retail">ปลีก ฿27,000</span></td>
+            <td><span class="price-wholesale">฿22,000</span><span class="price-retail">ปลีก ฿34,000</span></td>
+          </tr>
+          <tr>
+            <td>Size M</td>
+            <td><span class="price-wholesale">฿9,500</span><span class="price-retail">ปลีก ฿19,000</span></td>
+            <td><span class="price-wholesale">฿19,000</span><span class="price-retail">ปลีก ฿30,000</span></td>
+            <td><span class="price-wholesale">฿23,000</span><span class="price-retail">ปลีก ฿37,000</span></td>
+          </tr>
+          <tr>
+            <td>Size L</td>
+            <td><span class="price-wholesale">฿10,000</span><span class="price-retail">ปลีก ฿22,000</span></td>
+            <td><span class="price-wholesale">฿20,000</span><span class="price-retail">ปลีก ฿32,000</span></td>
+            <td><span class="price-wholesale">฿24,000</span><span class="price-retail">ปลีก ฿39,000</span></td>
+          </tr>
+          <tr>
+            <td>Size XL</td>
+            <td><span class="price-wholesale">฿10,500</span><span class="price-retail">ปลีก ฿25,000</span></td>
+            <td><span class="price-wholesale">฿21,000</span><span class="price-retail">ปลีก ฿35,000</span></td>
+            <td><span class="price-wholesale">฿25,000</span><span class="price-retail">ปลีก ฿45,000</span></td>
+          </tr>
+          <tr>
+            <td>Size XXL</td>
+            <td><span class="price-wholesale">฿13,000</span><span class="price-retail">ปลีก ฿28,000</span></td>
+            <td><span class="price-wholesale">฿25,000</span><span class="price-retail">ปลีก ฿39,000</span></td>
+            <td><span class="price-wholesale">฿29,000</span><span class="price-retail">ปลีก ฿55,000</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-note">ราคาข้างต้นเป็นราคาส่งสำหรับพันธมิตรโชว์รูม (Wholesale) ยังไม่รวม VAT 7%</div>
+
+    <h3 style="font-size:20px;font-weight:700;margin-top:56px;margin-bottom:24px;">ราคาฟิล์มกรองแสง <span style="color:var(--gold)">แยกชิ้น</span></h3>
+    <p style="color:var(--text-sub);font-size:14px;margin-bottom:24px;">สำหรับงานซ่อมหรือติดตั้งเฉพาะส่วน</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>รายการ</th>
+            <th>Black Bear Ceramic</th>
+            <th>Wolf Ultimate / Black Porsche</th>
+            <th>Midas Photochromic</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>บานหน้า (Front Window)</td>
+            <td><span class="price-wholesale">฿4,500</span><span class="price-retail">ปลีก ฿5,500</span></td>
+            <td><span class="price-wholesale">฿6,500</span><span class="price-retail">ปลีก ฿9,500</span></td>
+            <td><span class="price-wholesale">฿8,500</span><span class="price-retail">ปลีก ฿10,500</span></td>
+          </tr>
+          <tr>
+            <td>บานหลัง (Rear Window)</td>
+            <td><span class="price-wholesale">฿3,000</span><span class="price-retail">ปลีก ฿4,500</span></td>
+            <td><span class="price-wholesale">฿4,000</span><span class="price-retail">ปลีก ฿6,000</span></td>
+            <td><span class="price-wholesale">฿6,500</span><span class="price-retail">ปลีก ฿9,500</span></td>
+          </tr>
+          <tr>
+            <td>บานข้าง (ต่อบาน)</td>
+            <td><span class="price-wholesale">฿1,500</span><span class="price-retail">ปลีก ฿3,000</span></td>
+            <td><span class="price-wholesale">฿2,000</span><span class="price-retail">ปลีก ฿4,000</span></td>
+            <td><span class="price-wholesale">฿3,000</span><span class="price-retail">ปลีก ฿5,000</span></td>
+          </tr>
+          <tr>
+            <td>ซันรูฟ (Sunroof)</td>
+            <td><span class="price-wholesale">฿3,000</span><span class="price-retail">ปลีก ฿5,000</span></td>
+            <td><span class="price-wholesale">฿4,000</span><span class="price-retail">ปลีก ฿6,000</span></td>
+            <td><span class="price-wholesale">฿5,000</span><span class="price-retail">ปลีก ฿7,000</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- PPF INTRO -->
+<section class="ppf-intro" id="ppf">
+  <div class="container">
+    <div class="ppf-split">
+      <div>
+        <div class="section-label">ฟิล์มใสกันรอยสีรถยนต์</div>
+        <h2 class="section-title">PPF <span class="gold">Optimus X</span></h2>
+        <div class="divider"></div>
+        <div class="ppf-feature">
+          <div class="ppf-icon">✦</div>
+          <div>
+            <h4>Self-Healing Technology</h4>
+            <p>เนื้อฟิล์มชนิดพิเศษหนาและยืดหยุ่นสูง รอยขนแมวหรือรอยขีดข่วนบางเบาจะจางหายไปเองทันทีเมื่อโดนความร้อนจากแสงแดดหรือน้ำอุ่น</p>
+          </div>
+        </div>
+        <div class="ppf-feature">
+          <div class="ppf-icon">◈</div>
+          <div>
+            <h4>การปกป้องขั้นสุดยอด</h4>
+            <p>ดูดซับแรงกระแทกจากสะเก็ดหิน คราบแมลง คราบกรดนก ยางไม้ และรังสียูวี รักษาสีเดิมของตัวรถให้คงความสวยสดใหม่และรักษามูลค่าขายต่อ</p>
+          </div>
+        </div>
+        <div class="ppf-feature">
+          <div class="ppf-icon">⬥</div>
+          <div>
+            <h4>รับประกัน 5 ปีเต็ม</h4>
+            <p>ครอบคลุมทั้งปัญหาฟิล์มหลุดลอกหรือสีผิดเพี้ยนตามเงื่อนไขของผลิตภัณฑ์</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="ppf-highlight">
+          <div class="ppf-tag">PREMIUM GRADE</div>
+          <h3>Optimus X<br>เงา (Gloss)</h3>
+          <p>ฟิล์มใสกันรอยแบบเงาระดับไฮเอนด์ เหมาะสำหรับรักษาสีเดิมของรถให้คงความงามสูงสุด</p>
+        </div>
+        <div class="ppf-highlight" style="background:#1C1710;margin-top:2px;">
+          <div class="ppf-tag">SPORT GRADE</div>
+          <h3>Matte<br>ด้านกันรอยสปอร์ต</h3>
+          <p>ฟิล์มด้านสไตล์สปอร์ต เพิ่มความโดดเด่นและความเป็นเอกลักษณ์ให้กับรถยนต์</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PPF PRICING FULL CAR -->
+<section class="pricing-dark">
+  <div class="container">
+    <div class="section-label">ราคา PPF เต็มคัน</div>
+    <h2 class="section-title" style="color:#fff;">ราคาฟิล์มใสกันรอย<span style="color:var(--gold)">พรีเมียม</span></h2>
+    <div class="divider"></div>
+    <p style="color:rgba(255,255,255,0.5);margin-bottom:40px;font-size:14px;">*รถที่มีชุด Diffuser Kits บวกเพิ่ม 6,000 บาท/คัน · ราคาไม่รวม VAT 7%</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>ประเภทฟิล์ม</th>
+            <th>Size L<br><small style="font-weight:400;color:#aaa">(รวม S, M ทั้งหมด)</small></th>
+            <th>Size XL</th>
+            <th>Size XXL</th>
+            <th>รับประกัน</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>✨ Optimus X (เงา)</td>
+            <td><span class="price-wholesale" style="color:var(--gold);">฿100,000</span><span class="price-retail">ปลีก ฿160,000</span></td>
+            <td><span class="price-wholesale" style="color:var(--gold);">฿110,000</span><span class="price-retail">ปลีก ฿180,000</span></td>
+            <td><span class="price-wholesale" style="color:var(--gold);">฿120,000</span><span class="price-retail">ปลีก ฿200,000</span></td>
+            <td style="color:rgba(255,255,255,0.6);font-size:13px;">5 ปีเต็ม</td>
+          </tr>
+          <tr>
+            <td>⬛ Matte (ด้านสปอร์ต)</td>
+            <td><span class="price-wholesale" style="color:var(--gold);">฿110,000</span><span class="price-retail">ปลีก ฿170,000</span></td>
+            <td><span class="price-wholesale" style="color:var(--gold);">฿120,000</span><span class="price-retail">ปลีก ฿190,000</span></td>
+            <td><span class="price-wholesale" style="color:var(--gold);">฿130,000</span><span class="price-retail">ปลีก ฿210,000</span></td>
+            <td style="color:rgba(255,255,255,0.6);font-size:13px;">5 ปีเต็ม</td>
+          </tr>
+          <tr>
+            <td>🛡 Sentinel Prime</td>
+            <td><span class="price-wholesale" style="color:var(--gold);">฿60,000</span><span class="price-retail">ปลีก ฿95,000 (ลด 10% → ฿85,500)</span></td>
+            <td><span class="price-wholesale" style="color:var(--gold);">฿65,000</span><span class="price-retail">ปลีก ฿105,000 (ลด 10% → ฿94,500)</span></td>
+            <td><span class="price-wholesale" style="color:var(--gold);">฿75,000</span><span class="price-retail">ปลีก ฿120,000 (ลด 10% → ฿108,000)</span></td>
+            <td style="color:rgba(255,255,255,0.6);font-size:13px;">3 ปีเต็ม</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="table-note" style="background:#161410;color:rgba(255,255,255,0.5);">ราคาส่งสำหรับพันธมิตรโชว์รูม (Wholesale) · ยังไม่รวม VAT 7%</div>
+  </div>
+</section>
+
+<!-- PPF PARTS PRICING -->
+<section class="pricing" style="background:var(--gray-100);">
+  <div class="container">
+    <div class="section-label">ราคา PPF แยกชิ้นส่วน</div>
+    <h2 class="section-title">ฟิล์มกันรอย<span class="gold">แยกชิ้นส่วน</span></h2>
+    <div class="divider"></div>
+    <p class="section-desc">อ้างอิงราคาส่งสำหรับโชว์รูมพันธมิตร (Size L / XL / XXL ตามลำดับ)</p>
+    <div class="parts-grid">
+      <div class="part-card">
+        <div>
+          <div class="part-name">🚗 กันชนหน้า</div>
+          <span class="part-wholesale">฿13,000 – ฿15,000</span>
+          <span class="part-retail">ปลีก ฿18,000 – ฿21,000</span>
+        </div>
+      </div>
+      <div class="part-card">
+        <div>
+          <div class="part-name">🔙 กันชนหลัง</div>
+          <span class="part-wholesale">฿12,000 – ฿14,000</span>
+          <span class="part-retail">ปลีก ฿20,000 – ฿23,000</span>
+        </div>
+      </div>
+      <div class="part-card">
+        <div>
+          <div class="part-name">🚪 ประตูรถ (ต่อบาน)</div>
+          <span class="part-wholesale">฿8,000 – ฿11,000</span>
+          <span class="part-retail">ปลีก ฿10,000 – ฿13,000</span>
+        </div>
+      </div>
+      <div class="part-card">
+        <div>
+          <div class="part-name">◧ แก้มหลัง</div>
+          <span class="part-wholesale">฿20,000 – ฿23,000</span>
+          <span class="part-retail">ปลีก ฿25,000 – ฿28,000</span>
+        </div>
+      </div>
+      <div class="part-card">
+        <div>
+          <div class="part-name">🔝 หลังคา</div>
+          <span class="part-wholesale">฿15,000 – ฿18,000</span>
+          <span class="part-retail">ปลีก ฿18,000 – ฿21,000</span>
+        </div>
+      </div>
+      <div class="part-card" style="border-color:var(--gold);">
+        <div>
+          <div class="part-name">⭐ ส่วนหัวรถ</div>
+          <span class="part-wholesale" style="font-size:16px;">฿35,000 – ฿45,000</span>
+          <span class="part-retail">ปลีก ฿45,000 – ฿60,000</span>
+        </div>
+      </div>
+    </div>
+
+    <h3 style="margin-top:64px;font-size:20px;font-weight:700;margin-bottom:24px;">แพ็กเกจปกป้องเฉพาะส่วน <span style="color:var(--gold)">Front & Half Protection</span></h3>
+    <div class="parts-grid" style="grid-template-columns:repeat(auto-fit,minmax(300px,1fr));">
+      <div class="part-card" style="border-color:var(--gold);flex-direction:column;align-items:flex-start;gap:12px;">
+        <div class="part-name">🛡 Front Protection (ทุกรุ่น)</div>
+        <span class="part-wholesale">ราคาส่ง ฿30,000</span>
+        <span class="part-retail">ราคาปลีก ฿40,000</span>
+      </div>
+      <div class="part-card" style="flex-direction:column;align-items:flex-start;gap:12px;">
+        <div class="part-name">🛡🛡 Half-Protection (ทุกรุ่น)</div>
+        <span class="part-wholesale">ราคาส่ง ฿40,000</span>
+        <span class="part-retail">ราคาปลีก ฿60,000</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROFIT -->
+<section class="profit" id="profit">
+  <div class="container">
+    <div class="section-label">วิเคราะห์ส่วนต่างกำไร</div>
+    <div class="profit-big">45%</div>
+    <div class="profit-sub">อัตรากำไรขั้นต้นเฉลี่ย (Gross Margin)</div>
+    <div class="divider"></div>
+    <div class="profit-points">
+      <div class="profit-point">
+        <h4>ประหยัดต้นทุนของแถมทันที</h4>
+        <p>แทนที่จะต้องเสียแถมด้วยราคาหน้าร้าน โชว์รูมจ่ายราคาส่งลดงบไปได้ถึง 40–50%</p>
+      </div>
+      <div class="profit-point">
+        <h4>กรณีลูกค้าขอซื้ออัปเกรด</h4>
+        <p>สามารถเสนอขายให้ลูกค้ารถหรูในราคาหน้าร้านปกติ สร้างกำไรสดต่อคันสูงสุดในทันที</p>
+      </div>
+      <div class="profit-point">
+        <h4>ยกระดับความพึงพอใจ</h4>
+        <p>เป็นของแถมระดับ Exclusive ที่ดึงดูดใจลูกค้าและกระตุ้นยอดขายรถพรีเมียมให้ปิดเคสได้ง่ายขึ้น</p>
+      </div>
+    </div>
+    <div class="profit-example">
+      <div class="profit-example-num">+฿60K</div>
+      <p>ตัวอย่าง: ฟิล์มใสกันรอย <strong style="color:var(--gold);">Optimus X Size L</strong> ราคาส่ง <strong style="color:var(--gold);">฿100,000</strong> บาท — เสนอขายปลีกหน้าร้านได้ที่ <strong style="color:var(--gold);">฿160,000</strong> บาท สร้างกำไรสดต่อคันสูงถึง <strong style="color:var(--gold);">60,000 บาท!</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- MAXIMUS -->
+<section class="maximus">
+  <div class="container">
+    <div class="section-label">ผลิตภัณฑ์เสริม</div>
+    <h2 class="section-title">ฟิล์มนิรภัย<span class="gold">กระจกหน้า MAXIMUS</span></h2>
+    <div class="divider"></div>
+    <div class="maximus-card">
+      <div>
+        <h3>MAXIMUS Windshield Safety Film</h3>
+        <p>นวัตกรรมปกป้องเศษหินกระแทกจากบนทางด่วนไม่ให้กระจกหน้าแตกเป็นอันตราย ราคาพิเศษเหมาจ่ายเท่ากันทุกขนาดรถยนต์ L / XL / XXL</p>
+        <ul class="cond-list">
+          <li>รับประกัน 2 ปีเต็ม ครอบคลุมคุณภาพงานติดตั้ง</li>
+          <li>รถที่มีชุดแต่ง Diffuser Kits บวกเพิ่ม 6,000 บาท/คัน</li>
+          <li>ราคาทั้งหมดยังไม่รวม VAT 7%</li>
+          <li>มีผลบังคับใช้ตั้งแต่วันที่นำเสนอเป็นต้นไป</li>
+        </ul>
+      </div>
+      <div class="maximus-price-box">
+        <div class="label">ราคาส่ง (ทุกขนาด)</div>
+        <div class="price">฿12,000</div>
+        <div class="retail">ราคาปลีก ฿20,000 – ฿23,000</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section" id="contact">
+  <h2>พร้อมเริ่มต้น<br><span>เป็นพันธมิตร?</span></h2>
+  <p>เรายินดีนำทีมงานผู้เชี่ยวชาญไปจัดชุดสาธิตทดสอบการทำงานของวัสดุ และประสิทธิภาพการป้องกันเศษหินถึงโชว์รูมของท่าน</p>
+  <div class="contact-box">
+    <h4>CONTACT US</h4>
+    <div class="contact-row">
+      <div class="icon">🏢</div>
+      <p><strong style="color:#fff;">บริษัท เอส อาร์ 499 จำกัด</strong><br>Midas Export USA<br>499 ซอย 10 ถนนเสรี 6 แขวงสวนหลวง เขตสวนหลวง กรุงเทพมหานคร 10250</p>
+    </div>
+    <div class="contact-row">
+      <div class="icon">📠</div>
+      <p>เบอร์โทรสาร: <strong style="color:#fff;">02 737 1775</strong></p>
+    </div>
+    <div class="cta-note">*ราคาอ้างอิง ณ วันที่ 25 เมษายน 2569 · ยังไม่รวม VAT 7%</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="logo">MIDAS <span>EXPORT</span> USA</div>
+  <p>© 2569 บริษัท เอส อาร์ 499 จำกัด · ผู้จัดจำหน่ายอย่างเป็นทางการ</p>
+</footer>
+
+</body>
+</html>
